@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+  line-height: 50px;
+}
+
+.navbar > ul > li > a {
+}
+
+.left-nav {
+}
+
+.left-nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+}
+
+.left-nav > ul > li > a {
+  display: block;
+  padding: 0 10px;
+}
+
+.right-nav {
+  margin-right: 40px;
+}
+
+.right-nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+}
+
+.right-nav > ul > li {
+}
+
+.right-nav > ul > li > a {
+  display: block;
+  padding: 0 10px;
+}
+
+.right-nav > ul > li > a > svg:hover {
+  transition: 100ms;
+  transform: scale(1.2);
+}
