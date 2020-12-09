@@ -20,8 +20,12 @@
 .site-footer > ul > li > a {
 }
 
-.esrb {
+.footer-logos {
+  display: flex;
   margin-top: 40px;
+}
+
+.esrb {
   color: #fff;
   font-weight: bold;
 }

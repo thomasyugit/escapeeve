@@ -27,25 +27,29 @@ const SiteFooter = () => {
   return (
     <footer className={styles["site-footer"]}>
       <ul>
-        {links.map((r) => (
-          <li>
+        {links.map((r, idx) => (
+          <li key={idx}>
             <a href={r.path}>
               {r.icon ? <FontAwesomeIcon icon={r.icon} /> : r.title}
             </a>
           </li>
         ))}
       </ul>
-
-      <div className={styles["esrb"]}>
-        <a href="https://www.esrb.org/ratings-guide/" target="_blank">
-          <div style={{ float: "left", marginRight: "10px" }}>
-            <img src="/E10plus.svg" />
-          </div>
-          <div style={{ float: "right", marginLeft: "10px" }}>
-            <div>Cartoon Violence</div>
-            <div>Fantasy Violence</div>
-          </div>
+      <div className={styles["footer-logos"]}>
+        <a href="/about" style={{ marginRight: "20px" }}>
+          <img src="/inc-logo-white.png" style={{ height: "100px" }} />
         </a>
+        <div className={styles["esrb"]}>
+          <a href="https://www.esrb.org/ratings-guide/" target="_blank">
+            <div style={{ float: "left", marginRight: "10px" }}>
+              <img src="/E10plus.svg" />
+            </div>
+            <div style={{ float: "right", marginLeft: "10px" }}>
+              <div>Cartoon Violence</div>
+              <div>Fantasy Violence</div>
+            </div>
+          </a>
+        </div>
       </div>
     </footer>
   );

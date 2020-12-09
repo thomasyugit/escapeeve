@@ -27,8 +27,8 @@ const NavBar = () => {
           <li>
             <a href="/">Game Logo</a>
           </li>
-          {leftNav.map((r) => (
-            <li>
+          {leftNav.map((r, idx) => (
+            <li key={idx}>
               <a href={r.path}>
                 {r.icon ? <FontAwesomeIcon icon={r.icon} size="lg" /> : r.title}
               </a>
@@ -38,8 +38,8 @@ const NavBar = () => {
       </div>
       <div className={styles["right-nav"]}>
         <ul>
-          {rightNav.map((r) => (
-            <li>
+          {rightNav.map((r, idx) => (
+            <li key={idx}>
               <a href={r.path}>
                 {r.icon ? <FontAwesomeIcon icon={r.icon} size="lg" /> : r.title}
               </a>
