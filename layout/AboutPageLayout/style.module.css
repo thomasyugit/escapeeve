@@ -1,0 +1,39 @@
+.post-content {
+  color: #fff;
+  margin: 0 auto;
+  padding: 40px 40px 0 40px;
+  max-width: 1040px;
+}
+
+.post-content h1 {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.post-content p {
+  width: 680px;
+  margin: 0 auto;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.team-member {
+  margin: 20px;
+  width: 240px;
+  min-height: 300px;
+}
+
+.team-member h3 {
+  text-align: center;
+}
+.team-member img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}

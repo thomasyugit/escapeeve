@@ -12,7 +12,7 @@
   background-color: rgba(0, 0, 0, 0.05);
   padding: 25px;
   margin-right: 40px;
-  width: 500px;
+  width: 34%;
 }
 
 .game-info-about > p {
@@ -22,11 +22,41 @@
   margin-top: 0;
 }
 .game-info-review {
+  width: 34%;
+  padding: 20px 20px 0px 20px;
 }
 
 .game-info-review h2 {
   text-align: center;
 }
+
+.comment {
+  line-height: 1.5;
+  position: relative;
+  display: block;
+  font-style: italic;
+  padding: 12px 1.618em 12px 24px;
+  color: #978776;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.comment::before {
+  content: '"';
+  position: absolute;
+  color: #404040;
+  font-size: 200%;
+  top: 0;
+  left: 0;
+}
+
+.reviewer {
+  font-weight: 700;
+  display: block;
+  color: #404040;
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+
 .game-footage {
   display: flex;
   flex-direction: column;

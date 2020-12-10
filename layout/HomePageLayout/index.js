@@ -3,18 +3,26 @@ import CButton from "@/component/CButton";
 import styles from "./style.module.css";
 
 const HomePageLayout = () => {
-  let test = () => {
-    let arr = [];
-    for (let i = 0; i < 100; i++) {
-      arr.push(<div>hello</div>);
-    }
-    return arr;
-  };
   const screenshots = [
     "/images/00.jpg",
     "/images/01.jpg",
     "/images/02.jpg",
     "/images/03.jpg",
+  ];
+
+  const reviews = [
+    {
+      comment: "A good retro style platform game",
+      reviewer: "Fake Kojima - 9/10",
+    },
+    {
+      comment: "Nice space theme and level design",
+      reviewer: "Fake IGN - 9/10",
+    },
+    {
+      comment: "Good work for game development beginners",
+      reviewer: "Nice TA - 9/10",
+    },
   ];
 
   return (
@@ -50,14 +58,12 @@ const HomePageLayout = () => {
         </div>
         <div className={styles["game-info-review"]}>
           <h2>Game Reviews</h2>
-          <div>
-            <span>a good game</span>
-            <span>some reviewer - 9/10</span>
-          </div>
-          <div>
-            <span>a good game</span>
-            <span>some reviewer - 8/10</span>
-          </div>
+          {reviews.map((r) => (
+            <div>
+              <span className={styles["comment"]}>{r.comment}</span>
+              <span className={styles["reviewer"]}>{r.reviewer}</span>
+            </div>
+          ))}
         </div>
       </div>
       <div className={styles["game-footage"]}>
