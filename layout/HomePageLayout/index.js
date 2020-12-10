@@ -11,10 +11,10 @@ const HomePageLayout = () => {
     return arr;
   };
   const screenshots = [
-    "/images/00.png",
-    "/images/01.png",
-    "/images/02.png",
-    "/images/03.png",
+    "/images/00.jpg",
+    "/images/01.jpg",
+    "/images/02.jpg",
+    "/images/03.jpg",
   ];
 
   return (
