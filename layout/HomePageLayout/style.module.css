@@ -1,0 +1,80 @@
+.banner {
+}
+
+.game-info {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #f2efec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.game-info-about {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  margin-right: 40px;
+  width: 500px;
+}
+
+.game-info-about > p {
+  line-height: 24px;
+}
+.game-info-about > h2 {
+  margin-top: 0;
+}
+.game-info-review {
+}
+
+.game-info-review h2 {
+  text-align: center;
+}
+.game-footage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 40px 10vw 40px 10vw;
+}
+
+.game-footage > h1 {
+  margin-bottom: 40px;
+}
+
+.game-gallery {
+  color: #fff;
+  padding: 40px;
+}
+
+.game-gallery h1 {
+  text-align: center;
+}
+
+.image-list {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-list > a {
+  width: 400px;
+  padding: 20px;
+}
+
+.image-list > a > img {
+  width: 100%;
+}
+
+.img-wrapper {
+  width: 225px;
+  margin: 0 0 25px 25px;
+}
+
+.game-info .game-info-about .img-wrapper {
+  float: right;
+}
+
+.img-wrapper > img {
+  width: 100%;
+}

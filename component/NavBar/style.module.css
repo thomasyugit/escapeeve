@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 1);
   color: #fff;
   line-height: 50px;
+  z-index: 100;
 }
 
 .navbar > ul > li > a {
@@ -49,4 +50,11 @@
 .right-nav > ul > li > a > svg:hover {
   transition: 100ms;
   transform: scale(1.2);
+}
+
+.nav-logo {
+}
+
+.nav-logo > img {
+  vertical-align: middle;
 }

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -20,12 +21,37 @@ const NavBar = () => {
     { path: "/", title: "twitch", icon: faTwitch },
   ];
 
+  const [astroStyle, setAstroStyle] = useState({
+    transition: "300ms",
+  });
+
+  const logoOnEnter = () => {
+    setAstroStyle({
+      transform: "rotate(180deg)",
+      transition: "300ms",
+    });
+  };
+
+  const logoOnLeave = () => {
+    setAstroStyle({
+      transition: "300ms",
+    });
+  };
+
   return (
     <nav className={styles["navbar"]}>
       <div className={styles["left-nav"]}>
         <ul>
           <li>
-            <a href="/">Game Logo</a>
+            <a
+              href="/"
+              className={styles["nav-logo"]}
+              onMouseEnter={logoOnEnter}
+              onMouseLeave={logoOnLeave}
+            >
+              <img src="/game-logo-text-white.png" height="30px" />
+              <img src="/astro.png" height="30px" style={astroStyle} />
+            </a>
           </li>
           {leftNav.map((r, idx) => (
             <li key={idx}>
