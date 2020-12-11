@@ -2,12 +2,28 @@
 }
 
 .game-info {
-  padding: 40px;
-  display: flex;
-  justify-content: center;
   background-color: #f2efec;
   font-family: Arial, Helvetica, sans-serif;
 }
+.upperside {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.downside {
+  width: 34%;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+.downside h2 {
+  text-align: center;
+}
+
+.downside p {
+  line-height: 24px;
+}
+
 .game-info-about {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 25px;

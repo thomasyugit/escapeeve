@@ -32,6 +32,11 @@
 .team-member h3 {
   text-align: center;
 }
+
+.team-member p {
+  width: 100%;
+  text-align: center;
+}
 .team-member img {
   border-radius: 50%;
   display: block;
