@@ -7,12 +7,14 @@
 
 .post-content h1 {
   text-align: center;
-  margin: 100px auto;
+  margin: 80px auto;
 }
 
 .post-content p {
   width: 680px;
   margin: 0 auto;
+  line-height: 1.5em;
+  font-size: 18px;
 }
 
 .team-list {

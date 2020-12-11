@@ -12,8 +12,8 @@
 }
 
 .downside {
-  width: 34%;
-  padding-bottom: 80px;
+  max-width: 1040px;
+  padding: 0 5vw 80px 5vw;
   margin: 0 auto;
 }
 .downside h2 {
@@ -21,7 +21,8 @@
 }
 
 .downside p {
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 
 .game-info-about {
