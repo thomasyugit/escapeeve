@@ -32,13 +32,12 @@ const HomePageLayout = () => {
           style={{
             background: `url("banner.png") center center / cover no-repeat`,
             height: "500px",
+            position: "relative",
           }}
         >
-          <CButton
-            url="/"
-            text="GET DEMO"
-            style={{ position: "absolute", bottom: "300px", left: "140px" }}
-          />
+          <div style={{ position: "absolute", left: "100px", bottom: "100px" }}>
+            <CButton url="/" text="GET DEMO" />
+          </div>
         </div>
       </div>
       <div className={styles["game-info"]}>
