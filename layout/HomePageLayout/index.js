@@ -36,7 +36,10 @@ const HomePageLayout = () => {
           }}
         >
           <div style={{ position: "absolute", left: "100px", bottom: "100px" }}>
-            <CButton url="/" text="GET DEMO" />
+            <CButton
+              url="https://www.youtube.com/watch?v=tOwQ1PJBnQY"
+              text="GET DEMO"
+            />
           </div>
         </div>
       </div>
