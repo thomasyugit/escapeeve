@@ -8,6 +8,7 @@
 .upperside {
   padding: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -29,7 +30,7 @@
   background-color: rgba(0, 0, 0, 0.05);
   padding: 25px;
   margin-right: 40px;
-  width: 34%;
+  max-width: 500px;
 }
 
 .game-info-about > p {
@@ -39,7 +40,7 @@
   margin-top: 0;
 }
 .game-info-review {
-  width: 34%;
+  max-width: 500px;
   padding: 20px 20px 0px 20px;
 }
 

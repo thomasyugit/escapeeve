@@ -30,7 +30,7 @@ const HomePageLayout = () => {
       <div className={styles["banner"]}>
         <div
           style={{
-            background: `url("banner.png") center center / cover no-repeat`,
+            background: `url("banner.png")  center  / cover no-repeat`,
             height: "500px",
             position: "relative",
           }}
